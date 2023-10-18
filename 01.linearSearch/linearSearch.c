@@ -1,28 +1,27 @@
 #include <stdio.h>
 
-int
-main ()
-{
-    int size, a[20], i, item;
-    int key_index = -1;
-    printf ("\nEnter Size of Array : ");
-    scanf ("%d", &size);
-    printf ("\nEnter Array Elements:- \n");
-    for (i = 0; i < size; i++){
-        scanf ("%d", &a[i]);
-    }
-    printf ("\nEnter the Key Element to be Searched : ");
-    scanf ("%d", &item);
-    for (i = 0; i <size; i++){
-        if (a[i] == item){
-            key_index = i;
-        }
-    }
-    if (key_index == -1){
-      printf ("\n\t Key Element NOT found");
-    }
-    else{
-      printf ("\n\t Key Element found at %d index.", key_index);
-    }
+int main () {
+    int n;
+    printf("Enter the size of array: ");
+    scanf("%d", &n);
+    
+    int arr[n];
+    printf("Enter the values: ");
+    for(int i = 0; i < n; i++) {
+    	scanf("%d", &arr[i]);
+	}
+	
+	int key;
+	printf("Enter the number to find: ");
+    scanf("%d", &key);
+    
+    for(int i = 0; i < n; i++) {
+    	if(arr[i] == key) {
+			printf("Number found at index %d", i);
+			return 0;
+		}
+	}
+	
+	printf("Number not found.");
     return 0;
 }
