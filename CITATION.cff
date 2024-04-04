@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this repo, please cite it as below."
+authors:
+- family-names: "Mohammad Shaharyar"
+  given-names: "Ansari"
+title: "Algorithm Lab By Shaharyar"
+version: 1.0.0
+date-released: 2023-01-18
+url: "https://github.com/shaharyar797/Algorithm"
